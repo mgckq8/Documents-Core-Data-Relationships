@@ -12,7 +12,6 @@ class DocumentsViewController: UIViewController {
 
     @IBOutlet weak var documentsTableView: UITableView!
     
-    
     let dateFormatter = DateFormatter()
     var category: Category?
     

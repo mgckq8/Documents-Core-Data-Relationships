@@ -8,11 +8,15 @@
 
 import UIKit
 
-class CategoriesViewController: UIViewController {
+class DocCategoriesViewController: UIViewController {
 
+    @IBOutlet weak var categoriesTableView: UITableView!
+    
+    var categories = [Category]()
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        title = "Categories"
         // Do any additional setup after loading the view.
     }
     

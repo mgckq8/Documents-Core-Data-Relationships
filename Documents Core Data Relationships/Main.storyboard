@@ -10,7 +10,7 @@
         <!--Document Categories-->
         <scene sceneID="9FF-Ta-P29">
             <objects>
-                <viewController id="pyj-ir-5Os" customClass="CategoriesViewController" customModule="Documents_Core_Data_Relationships" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="pyj-ir-5Os" customClass="DocCategoriesViewController" customModule="Documents_Core_Data_Relationships" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wSc-oJ-T0x">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -64,7 +64,7 @@
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="categoriesTableView" destination="jiV-In-LEp" id="18s-fA-U5m"/>
+                        <outlet property="categoriesTableView" destination="jiV-In-LEp" id="C6S-XT-8ew"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="D4v-2M-ywF" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -105,12 +105,13 @@
                     <navigationItem key="navigationItem" title="New Category" id="R0U-Xa-Smh">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="EFI-qq-DeZ">
                             <connections>
-                                <action selector="saveCategory:" destination="k7b-sj-U5k" id="0bj-B1-yaJ"/>
+                                <action selector="saveCategory:" destination="k7b-sj-U5k" id="sf6-s3-zKW"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="titleTextField" destination="5vY-z5-ycT" id="gzS-sM-Dt6"/>
+                        <outlet property="titleTextField" destination="5vY-z5-ycT" id="egv-8d-w3H"/>
+                        <outlet property="view" destination="b8K-l2-wUw" id="b8L-DA-H2A"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sK9-db-ExT" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -173,13 +174,13 @@
                         <barButtonItem key="backBarButtonItem" title=" " id="8Ic-88-d5D"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="Y8Y-xd-Yrv">
                             <connections>
-                                <action selector="addNewExpense:" destination="u0S-x3-qR8" id="1cM-JV-Omk"/>
+                                <action selector="addNewExpense:" destination="u0S-x3-qR8" id="qNK-dR-wz8"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="expensesTableView" destination="yDR-kC-2oL" id="ntu-DF-2xU"/>
-                        <segue destination="Puk-RQ-0VB" kind="show" identifier="showExpense" id="1oZ-QS-jrd"/>
+                        <outlet property="documentsTableView" destination="yDR-kC-2oL" id="dBu-GX-K24"/>
+                        <segue destination="Puk-RQ-0VB" kind="show" identifier="showExpense" id="fXZ-Wg-uCb"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="R1e-PX-DNa" sceneMemberID="firstResponder"/>
@@ -200,7 +201,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Expense Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S93-ds-Ls5">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Document Name..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="S93-ds-Ls5">
                                 <rect key="frame" x="73" y="55.5" width="292" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -230,12 +231,13 @@
                     <navigationItem key="navigationItem" title="New Document" id="6JN-0F-ESr">
                         <barButtonItem key="rightBarButtonItem" systemItem="save" id="Eb5-yi-Lx2">
                             <connections>
-                                <action selector="saveExpense:" destination="Puk-RQ-0VB" id="ExI-7Y-eMy"/>
+                                <action selector="save:" destination="Puk-RQ-0VB" id="ybz-wi-HCc"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
                     <connections>
-                        <outlet property="nameTextField" destination="S93-ds-Ls5" id="n7e-iv-Fow"/>
+                        <outlet property="contentTextView" destination="zot-OB-PBV" id="wkS-h9-WWb"/>
+                        <outlet property="nameTextField" destination="S93-ds-Ls5" id="jG9-qT-cqL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aLJ-tV-kii" userLabel="First Responder" sceneMemberID="firstResponder"/>

@@ -15,10 +15,14 @@
 		C1086D392527AB180099409C /* Documents_Core_Data_RelationshipsTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D382527AB180099409C /* Documents_Core_Data_RelationshipsTests.swift */; };
 		C1086D442527AB180099409C /* Documents_Core_Data_RelationshipsUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D432527AB180099409C /* Documents_Core_Data_RelationshipsUITests.swift */; };
 		C1086D522527AC140099409C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = C1086D512527AC140099409C /* Main.storyboard */; };
-		C1086D562527ADAB0099409C /* CategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D552527ADAB0099409C /* CategoriesViewController.swift */; };
 		C1086D592527ADDA0099409C /* NewCategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D582527ADDA0099409C /* NewCategoryViewController.swift */; };
-		C1086D5B2527ADF90099409C /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D5A2527ADF90099409C /* DocumentsViewController.swift */; };
-		C1086D5D2527AE0C0099409C /* NewDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D5C2527AE0C0099409C /* NewDocumentViewController.swift */; };
+		C1086D622527B0730099409C /* Document+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D5E2527B0730099409C /* Document+CoreDataClass.swift */; };
+		C1086D632527B0730099409C /* Document+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D5F2527B0730099409C /* Document+CoreDataProperties.swift */; };
+		C1086D642527B0730099409C /* Category+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D602527B0730099409C /* Category+CoreDataClass.swift */; };
+		C1086D652527B0730099409C /* Category+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D612527B0730099409C /* Category+CoreDataProperties.swift */; };
+		C1086D6B2527B9FB0099409C /* DocCategoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D6A2527B9FB0099409C /* DocCategoriesViewController.swift */; };
+		C1086D6D2527D63A0099409C /* NewDocumentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D6C2527D63A0099409C /* NewDocumentViewController.swift */; };
+		C1086D6F2527D6AC0099409C /* DocumentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = C1086D6E2527D6AC0099409C /* DocumentsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,10 +57,14 @@
 		C1086D432527AB180099409C /* Documents_Core_Data_RelationshipsUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Documents_Core_Data_RelationshipsUITests.swift; sourceTree = "<group>"; };
 		C1086D452527AB180099409C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C1086D512527AC140099409C /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
-		C1086D552527ADAB0099409C /* CategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesViewController.swift; sourceTree = "<group>"; };
 		C1086D582527ADDA0099409C /* NewCategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewCategoryViewController.swift; sourceTree = "<group>"; };
-		C1086D5A2527ADF90099409C /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocumentsViewController.swift; sourceTree = "<group>"; };
-		C1086D5C2527AE0C0099409C /* NewDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDocumentViewController.swift; sourceTree = "<group>"; };
+		C1086D5E2527B0730099409C /* Document+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C1086D5F2527B0730099409C /* Document+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Document+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C1086D602527B0730099409C /* Category+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataClass.swift"; sourceTree = "<group>"; };
+		C1086D612527B0730099409C /* Category+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Category+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		C1086D6A2527B9FB0099409C /* DocCategoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DocCategoriesViewController.swift; sourceTree = "<group>"; };
+		C1086D6C2527D63A0099409C /* NewDocumentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewDocumentViewController.swift; sourceTree = "<group>"; };
+		C1086D6E2527D6AC0099409C /* DocumentsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DocumentsViewController.swift; path = ../../DocumentsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,13 +115,10 @@
 		C1086D1D2527AB170099409C /* Documents Core Data Relationships */ = {
 			isa = PBXGroup;
 			children = (
+				C1086D672527B09E0099409C /* Support Files */,
+				C1086D662527B07B0099409C /* Entities */,
 				C1086D572527ADB20099409C /* View Controllers */,
-				C1086D1E2527AB170099409C /* AppDelegate.swift */,
-				C1086D202527AB170099409C /* SceneDelegate.swift */,
 				C1086D512527AC140099409C /* Main.storyboard */,
-				C1086D2A2527AB170099409C /* Assets.xcassets */,
-				C1086D2C2527AB170099409C /* LaunchScreen.storyboard */,
-				C1086D2F2527AB170099409C /* Info.plist */,
 				C1086D272527AB170099409C /* Documents_Core_Data_Relationships.xcdatamodeld */,
 			);
 			path = "Documents Core Data Relationships";
@@ -140,12 +145,35 @@
 		C1086D572527ADB20099409C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				C1086D552527ADAB0099409C /* CategoriesViewController.swift */,
+				C1086D6A2527B9FB0099409C /* DocCategoriesViewController.swift */,
 				C1086D582527ADDA0099409C /* NewCategoryViewController.swift */,
-				C1086D5A2527ADF90099409C /* DocumentsViewController.swift */,
-				C1086D5C2527AE0C0099409C /* NewDocumentViewController.swift */,
+				C1086D6C2527D63A0099409C /* NewDocumentViewController.swift */,
+				C1086D6E2527D6AC0099409C /* DocumentsViewController.swift */,
 			);
 			path = "View Controllers";
+			sourceTree = "<group>";
+		};
+		C1086D662527B07B0099409C /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				C1086D5E2527B0730099409C /* Document+CoreDataClass.swift */,
+				C1086D5F2527B0730099409C /* Document+CoreDataProperties.swift */,
+				C1086D602527B0730099409C /* Category+CoreDataClass.swift */,
+				C1086D612527B0730099409C /* Category+CoreDataProperties.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		C1086D672527B09E0099409C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				C1086D1E2527AB170099409C /* AppDelegate.swift */,
+				C1086D202527AB170099409C /* SceneDelegate.swift */,
+				C1086D2A2527AB170099409C /* Assets.xcassets */,
+				C1086D2C2527AB170099409C /* LaunchScreen.storyboard */,
+				C1086D2F2527AB170099409C /* Info.plist */,
+			);
+			path = "Support Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -281,11 +309,15 @@
 			files = (
 				C1086D292527AB170099409C /* Documents_Core_Data_Relationships.xcdatamodeld in Sources */,
 				C1086D1F2527AB170099409C /* AppDelegate.swift in Sources */,
+				C1086D622527B0730099409C /* Document+CoreDataClass.swift in Sources */,
+				C1086D642527B0730099409C /* Category+CoreDataClass.swift in Sources */,
+				C1086D6D2527D63A0099409C /* NewDocumentViewController.swift in Sources */,
 				C1086D592527ADDA0099409C /* NewCategoryViewController.swift in Sources */,
-				C1086D5B2527ADF90099409C /* DocumentsViewController.swift in Sources */,
-				C1086D562527ADAB0099409C /* CategoriesViewController.swift in Sources */,
-				C1086D5D2527AE0C0099409C /* NewDocumentViewController.swift in Sources */,
+				C1086D652527B0730099409C /* Category+CoreDataProperties.swift in Sources */,
+				C1086D632527B0730099409C /* Document+CoreDataProperties.swift in Sources */,
 				C1086D212527AB170099409C /* SceneDelegate.swift in Sources */,
+				C1086D6F2527D6AC0099409C /* DocumentsViewController.swift in Sources */,
+				C1086D6B2527B9FB0099409C /* DocCategoriesViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -452,7 +484,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULK9S9WDFB;
-				INFOPLIST_FILE = "Documents Core Data Relationships/Info.plist";
+				INFOPLIST_FILE = "/Users/mcrozier0329/Desktop/FS2020/INFOTC-4425/1/Documents Core Data Relationships/Documents Core Data Relationships/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -470,7 +502,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = ULK9S9WDFB;
-				INFOPLIST_FILE = "Documents Core Data Relationships/Info.plist";
+				INFOPLIST_FILE = "/Users/mcrozier0329/Desktop/FS2020/INFOTC-4425/1/Documents Core Data Relationships/Documents Core Data Relationships/Support Files/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
